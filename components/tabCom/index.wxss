@@ -1,0 +1,13 @@
+.container{
+  background-color:#eb4450;
+  height: 80rpx;
+  padding: 16rpx;
+  box-sizing: border-box;
+}
+.main{
+  background-color:#fff;
+  color:#666;
+  border-radius:10rpx;
+  line-height:50rpx;
+  text-align: center;
+}

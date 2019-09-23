@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tabCom":"../../components/tabCom/index"
+  }
+}

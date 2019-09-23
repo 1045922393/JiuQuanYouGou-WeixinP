@@ -1,0 +1,3 @@
+<navigator url="/pages/search/index" hover-class="none"><view class="container">
+  <view class="main">请搜索</view>
+</view></navigator>

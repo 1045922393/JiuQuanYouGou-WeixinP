@@ -1,0 +1,32 @@
+.mainLeft{
+    width: 160rpx;
+    height:100%;
+    background-color:pink;
+}
+.main{
+    height:calc( 100vh - 80rpx );
+    display:flex;
+}
+.mainRight{
+    flex:1;
+}
+.leftItem{
+    padding:10rpx 0;
+    background-color:#f4f4f4;
+    color: #666;
+    font-size: 28rpx;
+    text-align: center;
+    border-bottom:2rpx solid #ccc;
+    box-sizing: border-box;
+}
+.leftItem .inside{
+    border-left:8rpx solid #f4f4f4;
+}
+.leftItem.active{
+    background-color:#fff;
+}
+.leftItem.active .inside{
+    color: #ff0000;
+    background-color:#fff;
+    border-left:8rpx solid #ff0000;
+}

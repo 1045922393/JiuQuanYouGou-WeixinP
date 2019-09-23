@@ -1,0 +1,25 @@
+<tabCom></tabCom>
+<!-- 接口文档 https://www.showdoc.cc/128719739414963 -->
+<!-- 轮播图 -->
+<swiper class="swiper" autoplay indicator-dots circular indicator-color="rgb(255,255,255)">
+    <swiper-item wx:for="{{swiperPicList}}" wx:key="index">
+        <image class="img" mode="widthFix" src="{{item.image_src}}"></image>
+    </swiper-item>
+</swiper>
+<!-- 导航 -->
+<view class="nav">
+    <image mode="widthFix" class="navItem" wx:for="{{navList}}" wx:key="index" src="{{item.image_src}}"></image>
+</view>
+<!-- 楼层 -->
+<view class="floor">
+    <view class="floorItem" wx:for="{{floorList}}" wx:key="index">
+        <view class="floorTitle">
+            <image mode="widthFix" src="{{item.floor_title.image_src}}"></image>
+        </view>
+        <view class="floorList">
+            <navigator class="productItem" wx:for="{{item.product_list}}" wx:key="index" url="{{item.navigator_url}}">
+                <image mode="scaleToFill" src="{{item.image_src}}"></image>
+            </navigator>
+        </view>
+    </view>
+</view>

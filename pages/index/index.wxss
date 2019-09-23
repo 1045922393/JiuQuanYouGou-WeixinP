@@ -1,0 +1,40 @@
+.swiper{
+    height: 340rpx;
+}
+.img{
+    width:100%;
+}
+.nav{
+
+    display:flex;
+    justify-content: space-around;
+    /* padding: 0 40rpx; */
+}
+.navItem{
+    width:20%;
+}
+.floorItem{
+    margin-top:20rpx;
+}
+.floorTitle image{
+    width: 100%
+}
+.productItem image{
+    width:33.33%;
+    height: 480rpx;
+    float:left;
+    border-bottom: 10rpx solid #fff;
+    box-sizing: border-box;
+}
+.floorList::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.floorList .productItem:nth-last-child(-n+4) image{
+    height: 240rpx;
+    border-left: 10rpx solid #fff;
+}
