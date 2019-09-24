@@ -1,7 +1,6 @@
 .mainLeft{
     width: 160rpx;
     height:100%;
-    background-color:pink;
 }
 .main{
     height:calc( 100vh - 80rpx );
@@ -29,4 +28,28 @@
     color: #ff0000;
     background-color:#fff;
     border-left:8rpx solid #ff0000;
+}
+.firstItem{
+    margin-bottom: 28rpx;
+}
+.firstItem .titelRight{
+    text-align:center;
+    color: #666;
+    font-size: 48rpx;
+    line-height: 50rpx;
+}
+.firstItem .listRight{
+    display:flex;
+    flex-wrap: wrap;
+}
+.firstItem .listRight .secondItem{
+    width:33.33%;
+    padding: 10rpx;
+    box-sizing:border-box;
+    text-align:center;
+    color: #666;
+    font-size: 26rpx;
+}
+.listRight .secondItem .listImg{
+    width:100%;
 }
