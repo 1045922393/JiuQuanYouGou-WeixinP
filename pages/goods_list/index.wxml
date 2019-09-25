@@ -9,11 +9,12 @@
     <view class="t-tap-item {{tabIndex===index?'active':''}}" data-index="{{index}}" bindtap="toggleTab" wx:for="{{topTab}}" wx:key="id">{{item.name}}</view>
 </view>
 <view class="goodsList">
-    <view class="goosItem" wx:for="{{goodsList}}">
+    <view class="goodsItem" wx:for="{{goodsList}}" wx:key="index">
         <view class="smallLogo"><image class="pic" mode="widthFix" src="{{item.goods_small_logo||'https://cn.bing.com/th?id=OIP.q6HD2MBC6WouoRyYZQK1GAHaEK&pid=Api&rs=1'}}"></image></view>
         <view class="description">
             <view class="name">{{item.goods_name}}</view>
-            <view class="price">{{item.goods_price}}</view>
+            <view class="price  {{index===goodsList.length-5?'turnTo':''}}">{{item.goods_price}}</view>
         </view>
     </view>
+    <view class="null"></view>
 </view>

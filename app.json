@@ -22,7 +22,8 @@
     "navigationBarTextStyle": "white",
     "backgroundColorTop": "#eb4450",
     "enablePullDownRefresh":true,
-    "pageOrientation":"auto"
+    "pageOrientation":"auto",
+    "onReachBottomDistance":0
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {

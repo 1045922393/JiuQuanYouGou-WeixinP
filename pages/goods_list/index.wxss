@@ -14,25 +14,29 @@
 .top_tap .t-tap-item.active {
   border-bottom: 2rpx solid var(--themeColor);
 }
-.goodsList .goosItem {
+.goodsList .goodsItem {
   display: flex;
+  height: 262rpx;
   border-bottom: 2rpx solid #666;
 }
-.goodsList .goosItem .smallLogo {
+.goodsList .goodsItem .smallLogo {
   flex: 1;
   padding: 10rpx;
+  display: flex;
+  align-items: center;
 }
-.goodsList .goosItem .smallLogo .pic {
+.goodsList .goodsItem .smallLogo .pic {
+  height: 400rpx;
   width: 100%;
 }
-.goodsList .goosItem .description {
+.goodsList .goodsItem .description {
   flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 10rpx;
 }
-.goodsList .goosItem .description .name {
+.goodsList .goodsItem .description .name {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -40,6 +44,9 @@
   -webkit-box-orient: vertical;
   font-size: 24rpx;
 }
-.goodsList .goosItem .description .price {
+.goodsList .goodsItem .description .price {
   color: var(--themeColor);
+}
+.goodsList .null {
+  height: 300rpx;
 }
