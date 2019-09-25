@@ -1,10 +1,23 @@
 <!--pages/goods_detail/index.wxml-->
-<text>pages/goods_detail/index.wxml</text>
 <!-- 
     全屏页面显示图片
     wx.previewImage
 
     rich-text nodes="原生结构标签"
-
-    navigator 的open-type 默认不能跳tarbar页面
+    botton open-type来联系客服和分享share
+    navigator 的open-type 默认不能跳tarbar页面 可以设置值为switchTab
  -->
+ <view class="swiperBox">
+    <swiper class="swiper" indicator-dots autoplay circular>
+        <swiper-item bindtap="tapSwiper" data-index="{{index}}" wx:for="{{goodInfo.pics}}" wx:key="pics_id">
+            <image class='pic' mode="aspectFit" src="{{item.pics_mid_url}}"></image>
+        </swiper-item>
+    </swiper>
+ </view>
+<view class="bottomTab">
+    <view class="contaction column"><button class="opacityButton" open-type="contact"></button><text class="iconfont icon-kefu"></text>联系客服</view>
+    <view class="share column"><button class="opacityButton" open-type="share"></button><text class="iconfont icon-yixianshi-"></text>分享</view>
+    <navigator open-type="switchTab" url="/pages/cart/index" class="cart column"><text class="iconfont icon-gouwuche"></text>购物车</navigator>
+    <view bindtap="addInCart" class="addInCart">加入购物车</view>
+    <view class="buyRightNow">立即购买</view>
+</view>

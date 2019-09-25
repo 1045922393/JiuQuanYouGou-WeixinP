@@ -81,6 +81,5 @@ Page({
   onPullDownRefresh(){
     this.searchParams.pagenum=1;
     this.getList();
-    
   }
 })
