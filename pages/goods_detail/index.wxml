@@ -1,2 +1,10 @@
 <!--pages/goods_detail/index.wxml-->
 <text>pages/goods_detail/index.wxml</text>
+<!-- 
+    全屏页面显示图片
+    wx.previewImage
+
+    rich-text nodes="原生结构标签"
+
+    navigator 的open-type 默认不能跳tarbar页面
+ -->

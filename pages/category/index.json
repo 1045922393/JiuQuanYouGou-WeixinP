@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "tabCom":"../../components/tabCom/index"
-  }
+    "tabCom": "../../components/tabCom/index"
+  },
+  "navigationBarTitleText": "优购分类",
+  "enablePullDownRefresh": false
+    
 }

@@ -9,10 +9,10 @@
         <view class="firstItem" wx:for="{{rightChildren}}" wx:key="index">
             <view class="titelRight">-----{{item.cat_name}}-----</view>
             <view class="listRight">
-                <view class="secondItem" wx:for="{{item.children}}" wx:key="index">
+                <navigator url="/pages/goods_list/index?cid={{item.cat_id}}" class="secondItem" wx:for="{{item.children}}" wx:key="index">
                     <image class="listImg" mode="widthFix" src="{{item.cat_icon}}"></image>
                     <text>{{item.cat_name}}</text>
-                </view>
+                </navigator>
             </view>
         </view>
     </scroll-view>

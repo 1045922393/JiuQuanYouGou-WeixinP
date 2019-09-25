@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "tabCom": "../../components/tabCom/index"
+  },
+  "navigationBarTitleText": "优购列表"
 }

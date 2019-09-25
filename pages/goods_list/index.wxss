@@ -1,1 +1,45 @@
 /* pages/goods_list/index.wxss */
+.top_tap {
+  display: flex;
+  justify-content: space-around;
+}
+.top_tap .t-tap-item {
+  flex: 1;
+  padding: 10rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2rpx solid #666;
+}
+.top_tap .t-tap-item.active {
+  border-bottom: 2rpx solid var(--themeColor);
+}
+.goodsList .goosItem {
+  display: flex;
+  border-bottom: 2rpx solid #666;
+}
+.goodsList .goosItem .smallLogo {
+  flex: 1;
+  padding: 10rpx;
+}
+.goodsList .goosItem .smallLogo .pic {
+  width: 100%;
+}
+.goodsList .goosItem .description {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10rpx;
+}
+.goodsList .goosItem .description .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 24rpx;
+}
+.goodsList .goosItem .description .price {
+  color: var(--themeColor);
+}

@@ -1,2 +1,19 @@
-<!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<tabCom></tabCom>
+<!-- 业务需求:
+    1   数据的获取渲染
+    2   上拉实现下一页加载  远程获取的总条数<当前页码*页容量
+    3   上拉的重新请求的数据覆盖了前面的数据
+    4   下拉刷新重置页面数据,手动停止刷新动画
+-->
+<view class="top_tap">
+    <view class="t-tap-item {{tabIndex===index?'active':''}}" data-index="{{index}}" bindtap="toggleTab" wx:for="{{topTab}}" wx:key="id">{{item.name}}</view>
+</view>
+<view class="goodsList">
+    <view class="goosItem" wx:for="{{goodsList}}">
+        <view class="smallLogo"><image class="pic" mode="widthFix" src="{{item.goods_small_logo||'https://cn.bing.com/th?id=OIP.q6HD2MBC6WouoRyYZQK1GAHaEK&pid=Api&rs=1'}}"></image></view>
+        <view class="description">
+            <view class="name">{{item.goods_name}}</view>
+            <view class="price">{{item.goods_price}}</view>
+        </view>
+    </view>
+</view>
